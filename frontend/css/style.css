@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  color: #1A1A1A;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  color: #5E1350;
+}
+
+a {
+  color: #8B1D74;
+}
+
+input, select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  background: #8B1D74;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+}
