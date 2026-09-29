@@ -2,20 +2,23 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Entrar — ELAB</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entrar • ELAB</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
-<h1>Entrar</h1>
-
-<form>
-  <input type="email" placeholder="E-mail" required>
-  <input type="password" placeholder="Senha" required>
-  <button type="submit">Entrar</button>
-</form>
-
-<a href="index.html">Voltar</a>
-
+<body data-page="login">
+<div class="split">
+  <div class="ilus"><a class="logo" href="index.html">{<span>ELA</span>B}</a><div class="ph-ilus">Espaço para ilustração</div></div>
+  <div class="form-lado"><form novalidate>
+    <h1>Entrar</h1>
+    <label>E-mail<input type="email" name="email" autocomplete="email" required></label>
+    <label>Senha<input type="password" name="senha" autocomplete="current-password" required></label>
+    <p class="erro" role="alert"></p>
+    <button class="btn block" type="submit">Entrar</button>
+    <p class="centro" style="margin-top:1rem"><a class="btn ghost block" href="registro.html">Criar nova conta</a></p>
+    <p class="mut centro">Teste: colab@elab.com ou empresa@elab.com • senha12345</p>
+  </form></div>
+</div>
+<script src="js/app.js"></script>
 </body>
 </html>

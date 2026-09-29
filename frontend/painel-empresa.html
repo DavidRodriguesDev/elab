@@ -2,15 +2,27 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Painel Empresa — ELAB</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel da empresa • ELAB</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
-<h1>Painel da Empresa</h1>
-<p>Vagas/eventos, candidatas e mensagens vão entrar aqui.</p>
-
-<a href="index.html">Sair</a>
-
+<body data-page="empresa">
+<main><h1>Painel da empresa</h1>
+  <div class="grid">
+    <section><h2>Minhas publicações</h2><div class="lista" id="lista"></div></section>
+    <aside class="painel"><h2>Nova publicação</h2>
+      <form novalidate>
+        <label>Título<input name="titulo" required maxlength="120"></label>
+        <label>Tipo<select name="tipo"><option value="vaga">Vaga</option><option value="evento">Evento</option><option value="palestra">Palestra</option><option value="bolsa">Bolsa de estudo</option></select></label>
+        <label>Local<input name="local" maxlength="80"></label>
+        <label>Data (eventos e bolsas)<input type="date" name="data"></label>
+        <label>Habilidades (separe por vírgula)<input name="habilidades" placeholder="javascript, react"></label>
+        <label>Descrição<textarea name="descricao" maxlength="1000"></textarea></label>
+        <p class="erro" role="alert"></p><p class="ok" role="status"></p>
+        <button class="btn" type="submit">Publicar</button>
+      </form>
+    </aside>
+  </div></main>
+<script src="js/app.js"></script>
 </body>
 </html>

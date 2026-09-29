@@ -2,25 +2,28 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Cadastro — ELAB</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cadastro • ELAB</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
-<h1>Criar conta</h1>
-
-<form>
-  <select>
-    <option value="empresa">Empresa</option>
-    <option value="colaboradora">Colaboradora</option>
-  </select>
-  <input type="text" placeholder="Nome" required>
-  <input type="email" placeholder="E-mail" required>
-  <input type="password" placeholder="Senha" required>
-  <button type="submit">Criar conta</button>
-</form>
-
-<a href="index.html">Voltar</a>
-
+<body data-page="registro">
+<div class="split inv">
+  <div class="ilus"><a class="logo" href="index.html">{<span>ELA</span>B}</a><div class="ph-ilus">Espaço para ilustração</div></div>
+  <div class="form-lado"><form novalidate>
+    <h1>Junte-se ao ELAB</h1>
+    <p class="mut">Crie uma conta para ficar por dentro de notícias e oportunidades para mulheres na tecnologia.</p>
+    <div class="linha">
+      <label>Nome<input name="nome" autocomplete="given-name" required></label>
+      <label>Sobrenome<input name="sobrenome" autocomplete="family-name"></label>
+    </div>
+    <label>Tipo de conta<select name="tipo"><option value="colaboradora">Colaboradora</option><option value="empresa">Empresa</option></select></label>
+    <label>E-mail<input type="email" name="email" autocomplete="email" required></label>
+    <label>Senha (mínimo 8 caracteres)<input type="password" name="senha" autocomplete="new-password" minlength="8" required></label>
+    <p class="erro" role="alert"></p>
+    <button class="btn block" type="submit">Criar conta</button>
+    <p style="margin-top:1rem"><a class="btn ghost block" href="login.html">Já tenho uma conta</a></p>
+  </form></div>
+</div>
+<script src="js/app.js"></script>
 </body>
 </html>
